@@ -1,0 +1,24 @@
+
+    <form method="POST" action="{% url 'apptp' %}" enctype="multipart/form-data" class="form1">
+    {% csrf_token %}
+        Name<li>{{form.name}}</li>
+    <!--{{form.as_p}}-->
+        Phone<li>{{form.phone}}</li>
+        Address<li>{{form.address}}</li>
+        Gender<li>{{form.gender}}</li>
+        City<li>{{form.city}}</li>
+        Email<li>{{form.email}}</li>
+        CONF<li>{{form.confphone}}</li>
+        Image<li>{{form.image}}</li>
+    {{form.errors}}
+    <input type="submit">
+    </form>
+
+
+     <!--<form method="POST" action="{% url 'checklink' %}" enctype="multipart/form-data" class="form1">-->
+    <!--{% csrf_token %}-->
+         <!--name{{form.name}}<br>-->
+         <!--phone{{form.phone}}-->
+    <!--{{form.errors}}-->
+    <!--<input type="submit">-->
+    <!--</form>-->

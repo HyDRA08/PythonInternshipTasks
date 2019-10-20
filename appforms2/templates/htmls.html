@@ -1,0 +1,8 @@
+
+    <form method="POST" action="{% url 'checklink' %}" enctype="multipart/form-data" class="form1">
+    {% csrf_token %}
+        Name{{form.name}}
+        Phone{{form.phone}}
+    {{form.errors}}
+    <input type="submit">
+    </form>

@@ -1,0 +1,7 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block main %}
+{% for i in shop1 %}
+<a href="/appshoping/{{i.id}}">{{i.catname}}</a><br>
+{% endfor %}
+{% endblock %}

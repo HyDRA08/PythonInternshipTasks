@@ -1,0 +1,256 @@
+body{
+	/*padding: 0;*/
+	margin: 0;
+	font-family: arial;
+}
+header{
+	margin: 0;
+	color: white;
+	/*height: 100px;*/
+}	
+nav{
+	background-color: yellow;
+	width: 100%;
+	height: 50px;
+}
+
+
+.heading{ /*class with logo facebook*/
+	background-color:#4867aa;
+	width: 25%;
+	height:80px;
+	float: left;
+	width: 50%;
+	/*height: 100px;*/
+	/*text-align: center;*/
+}
+.email_pass{
+	border-style:solid;
+	border-color: black;
+	border-width: 1px;
+	width: 150px;
+	height: 18px;
+}
+.header_table{ /*Email password Login Etc*/
+	padding-top: 10px;
+	/*background-color: red;*/
+	width: 40%;
+	margin-left: 100px;
+	font-size: 13px;
+}
+td{ 
+	padding:2px;
+}
+.log_in{	/*loging button*/
+	width: 54px;
+	color: white;
+	background-color: #3b5998;
+	border: 1px #3b5998 solid;
+}
+.forgotten_accnt{	/*anchor tag*/
+	color: #9cb4d8;
+	text-decoration: none;
+}
+/*Heading Ends*/
+
+
+
+/*section begins*/
+section{
+	background-color: #e7eaf3;
+	background-image: linear-gradient(to bottom, white, #d9deeb);
+	height: 650px;
+}
+.fb_connect{ /*class with connect image oand text*/
+	width: 50%;
+	height: 550px;
+	float: left;
+	background-color: #e7eaf3;
+	background-image: linear-gradient(to bottom, white, #d9deeb);
+}
+.fb_form{ /*class with  log in form*/
+	/*background-color: 	#f7f7f7;*/
+	width: 500px;
+	height: 550px;
+	float: left;
+	background-color: #e7eaf3;
+	background-image: linear-gradient(to bottom, white, #d9deeb);
+	/*background-color: orange;*/
+	/*padding-top: 0;*/
+}
+.input_name{
+	border-style: solid;
+	margin-right: 10px;
+	margin-left: 80px;
+	width: 193px;
+	height: 35px;
+	border-radius: 5px;
+	border-width: 0.5px;
+	border-color:#e1e1d0;
+	font-size: 18px;
+}
+
+.input_name2{
+	/*padding-left: 10px;*/
+	width: 193px;
+	height: 35px;
+	border-radius: 5px;
+	border-width: 0.5px;
+	border-color:#e1e1d0;
+	border-style: solid;
+	font-size: 18px;
+}
+#h2_1{ 	/*Create an account*/
+	padding-left: 76px;
+	height: 40px;
+	font-size: 36px;
+	margin-bottom: 0;
+}
+.logo_connect{	/*image of connect logo*/
+	: 100px;
+}
+#connecting_people{ 	/*h2 id of connecting people*/
+	margin-left:180px;
+	margin-top: 50px;
+	margin-right: 10px; 
+	font-size: 20px;
+	font-weight: 700;
+	color: #0e385f;
+}
+.logo_connect{		/*Logo of connecting people*/
+	margin-right: 10px;
+	margin-left: 180px;
+}
+/*.form_table{		form table of login etc*/
+	/*margin-left: 76px;*/
+	/*width: 50%;*/
+	/*height: 500px;*/
+	/*background-color: red;*/
+}
+
+h1{
+	padding-left:76px;
+	font-size: 40px;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+#free{				/*h2 id of free
+	/*background-color: red;*/
+	margin-left:79px;
+	/*margin-top: 0;*/
+	padding-top: 0;
+	font-size: 20px;
+	font-weight: 100;
+}
+.form_table input{
+	width: 170px;
+	height: 35px;
+	border-radius: 5px;
+}
+h3{
+	margin-left:79px;
+	/*background-color: yellow;*/
+	margin-bottom:0px; 
+	/*margin-top:0;*/
+	margin-right: 0;
+	font-weight: 100;
+}
+.why{
+	text-decoration: none;
+	color: #365899;
+}
+
+.select_table{		/*table for select*/
+	/*background-color: red;*/
+	padding: 0;
+	margin-left:76px;
+	/*border-color: black;*/
+	/*border-style: solid;*/
+	/*width: 10px;
+	height: 70px;
+	/*width: 200px;*/
+}
+.out_input{		/*mobile/email and password input*/
+	font-size: 18px;
+	margin-right: 0; 
+	margin-left: 80px;	
+	margin-bottom: 5px;
+	margin-top: 10px;
+	width: 400px;
+	height: 35px;
+	border-radius: 5px;
+	border-width: 0.5px;
+	border-color:#e1e1d0;
+	border-style:solid;
+	/*background-color: orange;*/
+}
+select{
+	height: 30px;
+}
+.gender_input1{		/*gender input adjust*/
+	margin-left:76px;
+	/*background-color: red;*/
+	margin-right: 0px;
+}
+.gender_input2{
+	margin-left: 20px;
+}
+
+.policy_head{
+	margin-left:76px;
+	color: #777;
+}
+.sign_up{ /*button for signup*/
+	border-radius: 5px;
+	margin-left:76px;
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to bottom, #6fdc6f, #1e7b1e);
+	color: white; 
+	border:0.5px solid #777;
+}
+.term_data_cookie{
+	color: #365899;
+	text-decoration: none;
+	/*margin-left: 76px;	*/
+}
+.page_celebrity{ /*for creating a page for celebrity*/
+	color: #365899;
+	/*margin-left: 76px;*/
+	text-decoration: none;
+	font-size: 13px;
+}
+.celeb_page{
+	font-size: 13px;
+}
+h5{
+	font-size: 11px;	
+	font-weight: 100;
+}
+b{
+	color: #666;
+}
+
+
+/*footer*/
+footer{
+	padding-left: 180px;
+	/*line-height: 11px;*/
+}
+.language{
+	color: #365899;
+	text-decoration: none;
+}
+.more_lang{ /*more lang button*/
+	background-color: white;
+	border: 0.5px solid #69a74e;
+	width: 30px;
+	/*padding-left: 100px;*/
+}
+span{
+	color: #e7eaf3;
+}
+.options{
+	color: #365899;
+	text-decoration: none;
+}

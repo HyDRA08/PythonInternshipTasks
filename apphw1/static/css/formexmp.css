@@ -1,0 +1,66 @@
+section{
+	font-family: cursive;
+	background-color: orange;
+	width: 30%;
+	height: 610px;	
+	color: white;
+}
+.form_class{
+	color: orange;
+	background-color: black;
+	width: 100%;
+}
+.main_form{ /*Table containing main form*/
+	height: 550px;
+	width: 100%;
+}
+input:not([type=radio]){
+	height: 20px;
+	border-radius: 5px;	
+}
+input[type="radio"]{
+	/*height: 0;*/
+}
+.month{
+	height: 25px;
+	width: 45%;
+	border-radius: 5px;
+}
+.day{
+	height: 25px;
+	width: 20%;
+	border-radius: 5px;
+}
+.year{
+	height: 25px;
+	width: 25%;
+	border-radius: 5px;
+}
+.country{
+	height: 25px;
+	width: 95%;
+	border-radius: 5px;
+}
+.sub_form{ /*Table Contaning Submit and reset*/
+	width: 100%;
+	/*background-color: blue;*/
+}
+.submit{
+	background-color: green;
+	color: white;
+	background-size: 10px;
+	width: 100px;
+	height: 25px;
+}
+.reset{
+	background-color: red;
+	color: white;
+	width: 100px;
+	height: 25px;
+}
+.label{
+	text-align: right;
+}
+.submit_align{
+	text-align: right;
+}

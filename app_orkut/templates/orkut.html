@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>orkut.com</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/orkut.css' %}">
+</head>
+<body>
+	<header>
+		<img src="{% static 'images/orkut_top_header.png' %}" width="100%">
+	</header>
+	<nav>
+			<a href="{% url 'lang1' %}">English</a>
+			<a href="{% url 'lang2' %}">French</a>
+			<a href="{% url 'lang3' %}">Espanoal</a>
+			<a href="{% url 'lang4' %}">Turkish</a>
+			<a href="{% url 'lang5' %}">Portugess</a>
+	</nav>
+	<section>
+		{% block output %}
+
+		{% endblock %}
+	</section>
+</body>
+</html>

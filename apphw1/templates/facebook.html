@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Facebook</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/orkut.css' %}">
+	<style>
+		@media only screen and (max-width: 1000px){
+            .fb_form{
+    			position: absolute;
+    			left: 10px; 
+    			top: 100px;
+    		}
+    		.fb_connect{
+    			display: none;
+    		}
+    		.logo_fb{
+    			margin-left: 100px;
+    		}
+    		.email_pass{
+    			display: none;
+    		}
+    		.forgotten_accnt{
+    			display: none;
+    		}
+    		.header_table label{
+    			display: none;
+    			}
+      		.log_in{
+    			position: absolute;
+    			left: 400px;
+    		}
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="heading">
+				<a href="https://www.facebook.com/"><img src="{% static 'images/fb.jpg' %}" alt="facebook" title="Go to Facebook Home" class="logo_fb" width="180px" margin-left="180px" margin-top="20px"></a>
+			</div>
+			<div class="heading">
+				<form>
+					<table class="header_table">
+						<tr>
+							<td><label>Email or Phone</label></td>
+							<td><label>Password</label></td>
+							<td>&nbsp</td>
+						</tr>
+						<tr>	
+							<td><input class="email_pass" type="text" name="emailorphone"></td>
+							<td><input class="email_pass" type="password" name="password"></td>
+							<td><button class="log_in">Log In</button></td>	
+						</tr>
+						<tr>
+							<td>&nbsp</td>
+							<td><a class="forgotten_accnt" href="https://store.steampowered.com/">Forgotten account?</a></td>
+						</tr>						
+					</table>	
+				</form>	
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div class="fb_connect">
+			<h2 id="connecting_people">Facebook helps you connect and share with the people in your life.</h2>
+			<img src="{% static 'images/fblogo1.jpg' %}" alt="connect" class="logo_connect" margin-left="100px">
+		</div>
+		<div class="fb_form">
+			<h2 id="h2_1">Create an account</h1>
+			<h2 id="free">It's free and always will be.</h2>
+			<form >
+				<!-- <table class="form_table"> -->
+					<!-- <tr> -->
+						<!-- <td> -->
+							<input class="input_name" type="text" name="firstname" placeholder="  First Name">
+						<!-- </td> -->
+						<!-- <td> -->
+							<input class="input_name2" type="text" name="surname" placeholder="  Surname"><br>
+						<!-- </td> -->
+					<!-- </tr> -->
+				<!-- </table> -->
+				<input type="text" name="numberoremail" placeholder="  Mobile number or email address" class="out_input"><br>
+				<input type="password" name="password" placeholder="  New Password" class="out_input">
+				<h3>Birthday</h3>
+				<table class="select_table">
+					<tr>
+						<td>															
+							<select>
+							<option>Day</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							</select>
+						</td>
+						<td>	
+							<select>
+							<option>Month</option>
+							<option>Jan</option>
+							<option>Feb</option>
+							<option>Mar</option>
+							<option>Apr</option>
+							</select>
+						</td>
+						<td>	
+							<select>
+							<option>Year</option>
+							<option>1996</option>
+							<option>1997</option>
+							<option>1998</option>
+							<option>1999</option>
+							</select>
+						</td>						
+						<td>	
+						<h5><a href="#" class="why" title="Click Here For More Information"> Why do I need To provide my<br> Date of Birth?</a></h5>	
+						</td>
+					</tr>
+				</table>				
+						
+				<input type="radio" name="gender" value="female" class="gender_input1">Female
+				<input type="radio" name="gender" value="male" class="gender_input2">Male		
+				<h5 class="policy_head">By clicking Sign Up, you agree to our <a class="term_data_cookie" href="https://www.facebook.com/legal/terms/update">Terms</a>, <a class="term_data_cookie" href="https://www.facebook.com/legal/terms/update">Data Policy</a> and<br><a class="term_data_cookie" href="https://www.facebook.com/policies/cookies/"> Cookie Policy</a>. You may receive SMS notifications from us and<br>can opt out at any time.</h5>
+			</form>
+			<button class="sign_up">Sign Up</button><br><br>
+			<h3 class="celeb_page"><a class="page_celebrity" href="https://www.facebook.com/pages/creation/?ref_type=registration_form">Create a Page</a> <b>for a celebrity, band and business</b></h3>
+		</div>
+	</section>
+	<footer>
+		<h5>
+			English(UK) 
+			<a class="language" href="https://ml-in.facebook.com/">മലയാളം</a>&nbsp &nbsp
+			<a class="language" href="https://ta-in.facebook.com">தமிழ்</a>&nbsp &nbsp
+			<a class="language" href="https://kn-in.facebook.com/">ಕನ್ನಡ</a>&nbsp	&nbsp
+			<a class="language" href="https://hi-in.facebook.com/">हिन्दी</a>&nbsp &nbsp
+			<a class="language" href="https://ur-pk.facebook.com/">اردو</a>&nbsp &nbsp
+			<a class="language" href="https://bn-in.facebook.com/">বাংলা</a>&nbsp &nbsp
+			<a class="language" href="https://te-in.facebook.com/">తెలుగు</a>&nbsp &nbsp
+			<a class="language" href="https://es-la.facebook.com/">Español</a>&nbsp &nbsp
+			<a class="language" href="https://pt-br.facebook.com/">Português (Brasil)</a>&nbsp &nbsp
+			<a class="language" href="https://fr-fr.facebook.com/">Français (France)</a>&nbsp &nbsp
+			<button class="more_lang">+</button><br>
+			<span>________________________________________________________________________________________________________________________________________________________________</span><br><br>
+			<a class="options" href="https://en-gb.facebook.com/r.php">Sign Up</a>&nbsp &nbsp &nbsp 
+			<a class="options" href="https://en-gb.facebook.com/login/">Log In</a>&nbsp &nbsp &nbsp 
+			<a class="options" href="https://en-gb.messenger.com/">Messenger</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/lite/">FaceBook Lite</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/mobile/?ref=pf">Mobile</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffriends%2Frequests%2F%3Ffcref%3Dffi">Find Friends</a>&nbsp &nbsp  &nbsp
+			<a class="options" href="https://en-gb.facebook.com/directory/people/">People</a>&nbsp &nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/directory/pages/">Pages</a>&nbsp &nbsp  &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/pages/category/">Page Categories</a>&nbsp &nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/places/">Places</a>&nbsp &nbsp &nbsp 
+			<a class="options" href="https://www.facebook.com/games/">Game</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/directory/places/">Location</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/directory/marketplace/">Market Place</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/directory/groups/">Groups</a><br>
+			<a class="options" href="https://www.instagram.com/">Instagram</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/local/lists/245019872666104/">Local</a> &nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/facebook">About</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fen-gb.facebook.com%2Fads%2Fcreate%2F%3Fcampaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user">Create Ad</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/pages/creation/?ref_type=sitefooter">Create Page</a>&nbsp &nbsp &nbsp &nbsp
+			<a class="options" href="https://developers.facebook.com/?ref=pf">Developers</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/careers/?ref=pf">Careers</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/privacy/explanation">Privacy</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/policies/cookies/">Cookies</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/help/568137493302217">Ad Choices</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/policies?ref=pf">Terms</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/help/2687943754764396">Account Security</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://www.facebook.com/help/www/1573156092981768/">Login help</a>&nbsp &nbsp &nbsp
+			<a class="options" href="https://en-gb.facebook.com/help/?ref=pf">Help</a><br><br><br><br>
+			Facebook © 2018
+		</h5>
+	</footer>
+</body>
+</html>

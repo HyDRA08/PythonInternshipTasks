@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+
+</head>
+<body>
+<!--{% for i in name_details %}-->
+    <!--<div>-->
+
+        <!--{{i.name}}<br><br>-->
+
+    <!--</div>-->
+    <!--<div>-->
+        <!--&lt;!&ndash;{% for i in name_details %}&ndash;&gt;-->
+        <!--{{i.city}}<br><br>-->
+        <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--&lt;!&ndash;{% for i in name_details %}&ndash;&gt;-->
+        <!--<img src='{{i.image.url}}'>-->
+        <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+    <!--</div>-->
+<!--{% endfor %}-->
+{% for i in name_details %}
+{{i.name}}<br>
+{{i.city}}<br>
+{{i.gender}}<br>
+<img src='{{i.image.url}}' width="100px" height="100px"><br>
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<form method="POST" action="{% url 'appt' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{form.errors}}
+    <input type="submit">
+</form>

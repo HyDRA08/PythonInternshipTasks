@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+    {% for i in shop %}
+    <a href="/appshoping/{{i.id}}">{{i.catname}}</a>&nbsp &nbsp &nbsp &nbsp
+    {% endfor %}
+    </header><br><br><br>
+    <section>
+        <div>
+            {% block main %}
+
+            {% endblock %}
+        </div>
+    </section>
+</body>
+</html>

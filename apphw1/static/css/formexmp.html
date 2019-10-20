@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/formexmp.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@media only screen and (max-width: 600px) {
+    		section{
+    			background-color: blue;
+    		}
+    		.main_form{
+    			background-color: red;
+    		}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		Sign Up
+		<form method="get">
+			<div class="form_class">
+				<table class="main_form">
+					<tr>
+						<td class="label">
+							<label>First Name</label>
+						</td>
+						<td>
+							<input type="text" name="firstname" size="30" placeholder="Enter First Name">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Last Name</label>
+						</td>
+						<td>
+							<input type="text" name="lastname" size="30" placeholder="Enter Last Name">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Screen Name</label>
+						</td>
+						<td>
+							<input type="text" name="screenname" size="30" placeholder="Enter Screen Name">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Date Of Birth</label>
+						</td>
+						<td>
+							<select class="month">
+								<option>Month</option>
+							</select>
+							<select class="day">
+								<option>Day</option>
+							</select>
+							<select class="year">
+								<option>Year</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Gender</label>
+						</td>
+						<td>
+							<label for="#gender_male"><input id="gender_male" type="radio" name="gender">Male</label>
+							<label for="#gender_female"><input id="gender_female" type="radio" name="gender">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Select Country</label>
+						</td>
+						<td>
+							<select class="country">
+								<option>Select Country...</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Email</label>
+						</td>
+						<td>
+							<input type="text" name="email" size="30" placeholder="Enter E-mail" pattern="[a-zA-Z0-9_.]{1,5}[@][a-z]{1,7}[.][a-z][2,3]">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Phone</label>
+						</td>
+						<td>
+							<input type="text" name="phone" size="30" placeholder="Enter Phone number">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Password</label>
+						</td>
+						<td>
+							<input type="password" name="password" size="30" placeholder="Password" pattern="[a][b][c]{2}">
+						</td>
+					</tr>
+					<tr>
+						<td class="label">
+							<label>Confirm Password</label>
+						</td>
+						<td>
+							<input type="password" name="password" size="30" placeholder="confirm password">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="label"> </label>
+						</td>
+						<td>
+							<input type="checkbox" name="tick">I Agree To The Terms To Use
+						</td>	
+					</tr>
+				</table>	
+			</div>
+			<div class="submit_class">
+				<table class="sub_form">
+					<tr>
+						<td> 
+							<label>&nbsp</label>
+						</td>
+						<td class="submit_align">
+							<input type="submit" name="submit" class="submit">
+							<input type="reset" name="cancel" class="reset">
+						</td>	
+					</tr>	
+				</table>	
+			</div>	
+		</form>	
+	</section>
+</body>
+</html>
